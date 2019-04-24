@@ -45,7 +45,7 @@ header {
   color: #4a4a4a;
   padding-right: 0.2rem;
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 600px) {
 .company {
     display: none;
   }
@@ -121,7 +121,7 @@ header {
   text-align: center;
 
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 600px) {
   .intro-top {
     position: relative;
     align-items: center;
@@ -156,6 +156,9 @@ header {
   width: 40%;
   border: 3px solid green;
 /*  padding: 32px 0 32px 0;*/
+}
+.col2-image-mobil {
+  display: none;
 }
 .col2-item-type1 {
   position: relative;
@@ -197,7 +200,7 @@ header {
 .readmore {
   font-size: 0.8rem;
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 600px) {
   .intro-top {
     position: relative;
     align-items: center;
@@ -213,6 +216,16 @@ header {
   .col2 {
     width: 100%;
     height: min-content;
+  }
+  .col2-image {
+    display: none;
+  }
+  .col2-image-mobil {
+    display: inline-block;
+    width: 100%;
+    overflow-y: hidden;
+    padding-right: 16px;
+
   }
   .col2-item-type1 {
     position: relative;
@@ -231,14 +244,18 @@ header {
     max-height: 392px;
     height: 33%;
   }
-  .col2-image {
+  /*.col2-image {
     display: inline-block;
     width: 100%;
     max-height: 50%;
     overflow-y: hidden;
     padding: 16px;
 
-  }
+  }*/
+}
+/* start learning */
+.start-learning-stack {
+  display: none;
 }
 .intro-cols {
   position: relative;
@@ -257,15 +274,14 @@ header {
 /*  align-content: center;
   justify-content: center;*/
 }
-
-
 .threecols {
 /*  position: relative;
   width: 100%;*/
   display: flex;
   flex-direction: row;
-  padding-left: 56px;
-  padding-right: 56px;
+  background-color: white;
+  margin-left: 56px;
+  margin-right: 56px;
   padding-bottom: 32px;
   border: 2px solid red;
 }
@@ -297,6 +313,18 @@ header {
   padding-left: 16px;
 
 }
+
+@media only screen and (max-width: 600px) {
+ .intro-cols {
+   display: none;
+ }
+ .start-learning-stack {
+   display: flex;
+   flex-direction: column;
+ }
+}
+
+/* thesis */
 .intro-thesis {
   position: relative;
   display: flex;
@@ -305,11 +333,15 @@ header {
   background-color: white;
   border: 2px solid blue;
 }
+.video-blank {
+  display: none;
+}
 .twocols {
   display: flex;
   flex-direction: row;
 
 }
+
 .thesis {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -319,10 +351,24 @@ header {
 /*  align-content: center;
   justify-content: center;*/
 }
+@media only screen and (max-width: 600px) {
+  .video-blank {
+    display: block;
+  }
+  .twocols {
+    display: none;
+  }
+}
+/* footer */
 .foot {
   display: flex;
 /*  padding-left: 24px;*/
   padding: 16px 24px;
   font-size: 0.9rem;
   justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .footer-end-text {
+    display: none;
+  }
 }
