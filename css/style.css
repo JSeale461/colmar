@@ -15,7 +15,7 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid red;
+/*  border-bottom: 2px solid red; */
   z-index: 2;
 }
 .hdr-mobile {
@@ -45,6 +45,10 @@ header {
   color: #4a4a4a;
   padding-right: 0.2rem;
 }
+.hdr-nav span a:hover {
+  font-weight: bolder;
+  color: green;
+ }
 @media only screen and (max-width: 600px) {
 .company {
     display: none;
@@ -58,14 +62,17 @@ header {
   justify-content: space-around;
  }
 }
-
+.intro-section {
+  background-color: lightgray;
+  padding-bottom: 32px;
+}
 .intro-top {
   position: relative;
   padding-top: 64px;
   display: flex;
   width: 100%;
   background-color: lightgray;
-  border: 2px solid blue;
+/*  border: 2px solid blue;*/
 }
 .intro {
   position: relative;
@@ -73,7 +80,7 @@ header {
   width: 100%;
   padding-top: 32px;
   background-color: lightgray;
-  border: 2px solid blue;
+/*  border: 2px solid blue; */
 }
 .intro-white {
   position: relative;
@@ -81,7 +88,7 @@ header {
   width: 100%;
   padding-top: 32px;
   background-color: white;
-  border: 2px solid blue;
+/*  border: 2px solid blue; */
 }
 .intro-rt {
   width: 60%;
@@ -90,7 +97,7 @@ header {
 .intro-pic {
   height: auto;
 
-  border: 2px dashed red;
+/*  border: 2px dashed red; */
 }
 .pic1 {
   width: 100%;
@@ -121,6 +128,9 @@ header {
   text-align: center;
 
 }
+.btn:hover {
+  background-color: blue;
+}
 @media only screen and (max-width: 600px) {
   .intro-top {
     position: relative;
@@ -128,12 +138,15 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-  padding-left: 16px;
+    padding-left: 16px;
   }
   .intro-rt {
     width: 100%;
 
 /*    padding: 0px 24px 32px 24px;*/
+  }
+  .learn {
+    padding-bottom: 32px;
   }
 }
 .it-doesnt {
@@ -154,7 +167,8 @@ header {
   display flex;
   flex-direction: column;
   width: 40%;
-  border: 3px solid green;
+  border-bottom: 1px solid lightgray;
+/*  border: 3px solid green; */
 /*  padding: 32px 0 32px 0;*/
 }
 .col2-image-mobil {
@@ -199,6 +213,12 @@ header {
 }
 .readmore {
   font-size: 0.8rem;
+  text-decoration: none;
+  
+}
+.readmore:hover {
+  font-weight: bolder;
+  color: green;
 }
 @media only screen and (max-width: 600px) {
   .intro-top {
@@ -265,9 +285,9 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 32px;
+/*  padding-top: 32px; */
   background-color: lightgray;
-  border: 2px solid blue;
+/*  border: 2px solid blue; */
 }
 .start {
   padding-bottom: 32px;
@@ -289,7 +309,7 @@ header {
   margin-left: 56px;
   margin-right: 56px;
   padding-bottom: 32px;
-  border: 2px solid red;
+/*  border: 2px solid red; */
 }
 .onethirdtcol {
   width: 33%;
@@ -328,49 +348,58 @@ header {
    background-color: white;
 
  }
+ .intro-section {
+   background-color: lightgray;
+   padding-bottom: 0;
+ }
  .start-learning-stack {
    display: flex;
    flex-direction: column;
+    padding-bottom: 24px;
+   border-bottom: 1px solid lightgray;
 /*   background-color: lightgray;*/
 
  }
  .start-learning-stack li {
    padding-top: 16px;
    padding-bottom: 24px;
+   margin-left: 16px;
+   margin-right: 16px;
    margin-bottom: 8px;
    padding-left: 16px;
    background-color: lightgray;
+ }
 }
-
 /* thesis */
-.intro-thesis {
+.intro-left {
+  width: 60%;
+  padding: 0px 24px 32px 24px;
+}
+.thesis {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: white;
-  border: 2px solid blue;
+/*  border: 2px solid blue; */
 }
-.video-blank {
-  display: none;
-}
-.twocols {
-  display: flex;
-  flex-direction: row;
-
-}
-
-.thesis {
+.thesis-title {
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 1.5rem;
   font-weight: 900;
   text-align: center;
-/*  align-content: center;
-  justify-content: center;*/
+}
+.video-mobile {
+  display: none;
+}
+.twocols {
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
-  .video-blank {
+  .video-mobile {
     display: block;
   }
   .twocols {
@@ -384,6 +413,7 @@ header {
   padding: 16px 24px;
   font-size: 0.9rem;
   justify-content: space-between;
+  border-top: 1px solid lightgray;
 }
 @media only screen and (max-width: 600px) {
   .footer-end-text {
