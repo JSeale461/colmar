@@ -213,12 +213,15 @@ header {
 }
 .readmore {
   font-size: 0.8rem;
+}
+.readmore a {
   text-decoration: none;
-  
+  color: blue;
 }
 .readmore:hover {
+  font-style: italic;
   font-weight: bolder;
-  color: green;
+
 }
 @media only screen and (max-width: 600px) {
   .intro-top {
