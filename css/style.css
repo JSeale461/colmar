@@ -62,6 +62,8 @@ header {
   justify-content: space-around;
  }
 }
+
+/* learn something new every day..*/
 .intro-section {
   background-color: lightgray;
   padding-bottom: 32px;
@@ -90,7 +92,7 @@ header {
   background-color: white;
 /*  border: 2px solid blue; */
 }
-.intro-rt {
+.intro-top-rt {
   width: 60%;
   padding: 0px 24px 32px 24px;
 }
@@ -132,6 +134,9 @@ header {
   background-color: blue;
 }
 @media only screen and (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+  }
   .intro-top {
     position: relative;
     align-items: center;
@@ -140,7 +145,7 @@ header {
     width: 100%;
     padding-left: 16px;
   }
-  .intro-rt {
+  .intro-top-rt {
     width: 100%;
 
 /*    padding: 0px 24px 32px 24px;*/
@@ -148,6 +153,11 @@ header {
   .learn {
     padding-bottom: 32px;
   }
+}
+/* it doesn't hurt to keep practicing...*/
+.intro-rt {
+  width: 60%;
+  padding: 0px 24px 32px 24px;
 }
 .it-doesnt {
   padding-top: 32px;
